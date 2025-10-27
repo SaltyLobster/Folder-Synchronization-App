@@ -2,25 +2,11 @@
 
 A simple C# console application that performs one-way synchronization between two folders, maintaining an identical copy of a source folder in a replica folder.
 
-## Features
-
-- **One-way synchronization**: Replica folder becomes an exact copy of source folder
-- **Periodic execution**: Automatically syncs at specified intervals
-- **Comprehensive logging**: All operations logged to both console and file
-- **MD5 hash comparison**: Efficiently detects file changes
-- **Recursive directory support**: Handles nested folder structures
-- **Command-line interface**: Easy to use and automate
-
-## Requirements
-
-- .NET 6.0 or higher
-- Windows, Linux, or macOS
-
 ## Quick Start for Testing
 
 1. **Clone the repository**
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/SaltyLobster/Folder-Synchronization-App.git
 cd Folder_Synchronization_App
 ```
 
@@ -54,12 +40,6 @@ The application performs the following operations during each synchronization cy
 5. **Remove extra directories** from replica that don't exist in source
 
 All operations are logged with timestamps to both the console and a log file.
-
-## Usage
-
-```bash
-dotnet run <source_path> <replica_path> <interval_seconds> <log_file_path>
-```
 
 ### Parameters
 
@@ -96,47 +76,30 @@ Press ENTER to stop...
 ```
 
 ## Project Structure
-
 ```
-Folder_Synchronization_App/
-├── Program.cs              # Main entry point and Timer setup
-├── Logger.cs               # Logging functionality
-├── FileComparer.cs         # MD5 hash calculation and file comparison
-├── FolderSynchronizer.cs   # Core synchronization logic
-├── README.md
-├── .gitignore
-└── TestFolders/
-    ├── Source/             # Sample source folder with test files
-    │   ├── document.txt
-    │   ├── image.jpg
-    │   └── subfolder/
-    │       └── notes.txt
-    └── Replica/            # Auto-generated during testing (gitignored)
+Folder-Synchronization-App/
+├── .git/                                    # Git repository data
+├── .vs/                                     # Visual Studio cache (ignored)
+├── bin/                                     # Compiled binaries (ignored)
+├── obj/                                     # Build objects (ignored)
+├── TestFolders/                             # Test data folders (ignored)
+├── .gitignore                               # Git ignore rules
+├── FileComparer.cs                          # File comparison logic
+├── Folder Synchronization App.csproj        # C# project file
+├── Folder Synchronization App.sln           # Visual Studio solution file
+├── FolderSynchronizer.cs                    # Main synchronization logic
+├── Logger.cs                                # Logging functionality
+├── Program.cs                               # Application entry point
+└── README.md                                # Project documentation
 ```
 
-## Error Handling
+## File Descriptions
 
-The application includes comprehensive error handling:
-
-- **Invalid arguments**: Shows usage instructions
-- **Missing source folder**: Logs error and skips synchronization
-- **File access errors**: Logged but doesn't crash the application
-- **Log file errors**: Falls back to console-only logging
-
-## Technical Details
-
-- **File comparison**: Uses MD5 hashing for efficient change detection
-- **Size optimization**: Compares file sizes before calculating hashes
-- **Thread safety**: Logger uses locks to prevent concurrent write issues
-- **Recursive sync**: Automatically handles nested directory structures
-- **Timer-based**: Uses `System.Threading.Timer` for periodic execution
-
-## Notes
-
-- This is a one-way synchronization tool - changes in replica are overwritten
-- Large files are handled efficiently through stream-based hashing
-- The application creates necessary directories automatically
-- Synchronization runs immediately on startup, then at specified intervals
+- **Program.cs** - Entry point of the application
+- **FolderSynchronizer.cs** - Core synchronization engine
+- **FileComparer.cs** - Compares files for differences
+- **Logger.cs** - Manages logging to file and console
+- **Folder Synchronization App.csproj** - Project configuration and dependencies
 
 ## License
 
