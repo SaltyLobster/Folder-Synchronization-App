@@ -44,7 +44,6 @@ namespace Folder_Synchronization_App
         }
         private void SyncDirectory(string sourceDir, string replicaDir)
         {
-            // Copy/Update files from source
             string[] sourceFiles = Directory.GetFiles(sourceDir);
             foreach (string sourceFile in sourceFiles)
             {
@@ -63,7 +62,6 @@ namespace Folder_Synchronization_App
                 }    
             }
 
-            // Copy/Update subdirectories
             string[] sourceDirectories = Directory.GetDirectories(sourceDir);
             foreach (string sourceSubDir in sourceDirectories)
             {
@@ -79,7 +77,6 @@ namespace Folder_Synchronization_App
                 SyncDirectory(sourceSubDir, replicaSubDir);
             }
 
-            // Delete the files from replica that don't exist in source
             string[] replicaFiles = Directory.GetFiles(replicaDir);
             foreach (string replicaFile in replicaFiles)
             {
@@ -93,7 +90,6 @@ namespace Folder_Synchronization_App
                 }
             }
 
-            // Remove directories from replica that don't exist in source
             string[] replicaDirectories = Directory.GetDirectories(replicaDir);
             foreach (string replicaSubDir in replicaDirectories)
             {
