@@ -2,6 +2,10 @@
 
 A simple C# console application that performs one-way synchronization between two folders, maintaining an identical copy of a source folder in a replica folder.
 
+### System Requirements
+- **Operating System:** Windows, Linux, or macOS
+- **.NET Runtime:** .NET 6.0 or higher
+  
 ## Quick Start for Testing
 
 1. **Clone the repository**
