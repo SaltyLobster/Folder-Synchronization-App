@@ -30,7 +30,7 @@ namespace Folder_Synchronization_App
                 if (!Directory.Exists(_replicaPath))
                 {
                     Directory.CreateDirectory(_replicaPath);
-                    _logger.LogError($"Created replica folder: {_sourcePath}");
+                    _logger.Log($"Created replica folder: {_replicaPath}");
                 }
 
                 SyncDirectory(_sourcePath, _replicaPath);
