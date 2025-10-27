@@ -1,16 +1,28 @@
 # Build results
-bin/
-obj/
 [Dd]ebug/
 [Rr]elease/
+[Bb]in/
+[Oo]bj/
 
-# Visual Studio
+# Visual Studio files
 .vs/
-*.user
 *.suo
+*.user
+*.userosscache
+*.sln.docstates
 
-# Log files
-*.log
-
-# Test folders - Replica is auto-generated
+# Test folder
 TestFolders/Replica/
+
+# User-specific files
+*.rsuser
+*.userprefs
+
+# Build outputs
+*.dll
+*.exe
+*.pdb
+
+# IDE files
+.vscode/
+.idea/
