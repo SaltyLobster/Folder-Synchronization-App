@@ -37,7 +37,14 @@ namespace Folder_Synchronization_App
                 }
             }
         }
+        public void LogError(string message, Exception? ex = null)
+        {
+            string errorMessage = ex != null
+                ? $"ERROR: {message} - {ex.Message}"
+                : $"ERROR: {message}";
+
+            Log(errorMessage);
+        }
     }
 }
-
     
