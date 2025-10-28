@@ -23,8 +23,9 @@ namespace FolderSynchronizationApp
 
                 if (!Directory.Exists(_sourcePath))
                 {
-                    _logger.LogError($"Source folder does not exist: {_sourcePath}");
-                    return;
+                    string errorMsg = $"Source folder does not exist: {_sourcePath}";
+                    _logger.LogError(errorMsg);
+                    throw new DirectoryNotFoundException(errorMsg);
                 }
 
                 if (!Directory.Exists(_replicaPath))

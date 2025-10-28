@@ -1,0 +1,42 @@
+[28.10.2025 20:29:47] Application started.
+[28.10.2025 20:29:47] Application stopped: Source and Replica paths are identical
+[28.10.2025 20:30:01] Application started.
+[28.10.2025 20:30:01] Synchronization interval is 30 seconds
+[28.10.2025 20:30:01] Starting synchronization.
+[28.10.2025 20:30:01] ERROR: Source folder does not exist: asd
+[28.10.2025 20:30:01] ERROR: Synchronization failed - Source folder does not exist: asd
+[28.10.2025 20:30:11] Application stopped.
+[28.10.2025 20:31:36] Application started.
+[28.10.2025 20:31:36] Synchronization interval is 10 seconds
+[28.10.2025 20:31:36] Starting synchronization.
+[28.10.2025 20:31:36] Synchronization completed
+[28.10.2025 20:31:46] Starting synchronization.
+[28.10.2025 20:31:46] Synchronization completed
+[28.10.2025 20:31:56] Starting synchronization.
+[28.10.2025 20:31:56] Created directory: TestFolders/Replica\New folder
+[28.10.2025 20:31:56] Created directory: TestFolders/Replica\Test
+[28.10.2025 20:31:56] Synchronization completed
+[28.10.2025 20:32:06] Starting synchronization.
+[28.10.2025 20:32:06] Created directory: TestFolders/Replica\Test Test12
+[28.10.2025 20:32:06] Created directory: TestFolders/Replica\Test Test12\WDwadff
+[28.10.2025 20:32:06] Deleted directory: TestFolders/Replica\New folder
+[28.10.2025 20:32:06] Synchronization completed
+[28.10.2025 20:32:16] Starting synchronization.
+[28.10.2025 20:32:16] Copied: TestFolders/Source\Test Test12\daw.bmp -> TestFolders/Replica\Test Test12\daw.bmp
+[28.10.2025 20:32:16] Copied: TestFolders/Source\Test Test12\WDwadff\dawdawd.txt -> TestFolders/Replica\Test Test12\WDwadff\dawdawd.txt
+[28.10.2025 20:32:16] Synchronization completed
+[28.10.2025 20:32:26] Starting synchronization.
+[28.10.2025 20:32:26] Synchronization completed
+[28.10.2025 20:32:36] Starting synchronization.
+[28.10.2025 20:32:36] Synchronization completed
+[28.10.2025 20:32:46] Starting synchronization.
+[28.10.2025 20:32:46] Synchronization completed
+[28.10.2025 20:32:56] Starting synchronization.
+[28.10.2025 20:32:56] Synchronization completed
+[28.10.2025 20:33:06] Starting synchronization.
+[28.10.2025 20:33:06] Synchronization completed
+[28.10.2025 20:33:16] Starting synchronization.
+[28.10.2025 20:33:16] Synchronization completed
+[28.10.2025 20:33:26] Starting synchronization.
+[28.10.2025 20:33:26] Synchronization completed
+[28.10.2025 20:33:35] Application stopped.

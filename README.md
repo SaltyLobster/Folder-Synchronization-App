@@ -90,7 +90,6 @@ Folder-Synchronization-App/
 ├── .gitignore                               # Git ignore rules
 ├── FileComparer.cs                          # File comparison logic
 ├── Folder Synchronization App.csproj        # C# project file
-├── Folder Synchronization App.sln           # Visual Studio solution file
 ├── FolderSynchronizer.cs                    # Main synchronization logic
 ├── Logger.cs                                # Logging functionality
 ├── Program.cs                               # Application entry point

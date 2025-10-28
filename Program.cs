@@ -37,6 +37,24 @@ namespace FolderSynchronizationApp
                 _logger = new Logger(logFilePath);
                 _logger.Log("Application started.");
 
+                if (Path.GetFullPath(sourcePath).Equals(Path.GetFullPath(replicaPath), StringComparison.OrdinalIgnoreCase))
+                {
+                    Console.WriteLine("Source and Replica folders cannot have the same path");
+                    _logger.Log("Application stopped: Source and Replica paths are identical");
+                    Console.WriteLine("Press ENTER to close the Application");
+                    Console.ReadLine();
+                    return;
+                }
+
+                if (Path.GetFullPath(replicaPath).StartsWith(Path.GetFullPath(sourcePath) + Path.DirectorySeparatorChar, StringComparison.OrdinalIgnoreCase))
+                    {
+                    Console.WriteLine("Replica folder cannot be inside the Source folder");
+                    _logger.Log("Application stopped: Replica is subdirectory of Source folder");
+                    Console.WriteLine("Press ENTER to close the application");
+                    Console.ReadLine();
+                    return;
+                    }
+
                 _synchronizer = new FolderSynchronizer(sourcePath, replicaPath, _logger);
 
                 _timer = new Timer(SyncCallback, null, 0, _intervalSeconds * 1000);
