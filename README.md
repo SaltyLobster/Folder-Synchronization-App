@@ -4,7 +4,7 @@ A simple C# console application that performs one-way synchronization between tw
 
 ### System Requirements
 - **Operating System:** Windows, Linux, or macOS
-- **.NET Runtime:** .NET 6.0 or higher
+- **.NET Runtime:** .NET 8.0 or higher
   
 ## Quick Start for Testing
 

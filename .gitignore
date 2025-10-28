@@ -1,28 +1,22 @@
-# Build results
 [Dd]ebug/
 [Rr]elease/
 [Bb]in/
 [Oo]bj/
 
-# Visual Studio files
 .vs/
 *.suo
 *.user
 *.userosscache
 *.sln
 
-# Test folder
 TestFolders/Replica/
 
-# User-specific files
 *.rsuser
 *.userprefs
 
-# Build outputs
 *.dll
 *.exe
 *.pdb
 
-# IDE files
 .vscode/
 .idea/

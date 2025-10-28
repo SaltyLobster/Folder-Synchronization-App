@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace Folder_Synchronization_App
+namespace FolderSynchronizationApp
 {
     class Program
     {

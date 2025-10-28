@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Folder_Synchronization_App
+namespace FolderSynchronizationApp
 {
     public class FolderSynchronizer
     {

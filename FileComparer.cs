@@ -2,7 +2,7 @@
 using System.IO;
 using System.Security.Cryptography;
 
-namespace Folder_Synchronization_App
+namespace FolderSynchronizationApp
 {
     class FileComparer
     {
