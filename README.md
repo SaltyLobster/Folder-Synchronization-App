@@ -10,7 +10,7 @@ A simple C# console application that performs one-way synchronization between tw
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/SaltyLobster/Folder-Synchronization-App.git
+git clone https://github.com/SaltyLobster/FolderSynchronizationApp.git
 ```
 
 2. **Build the project**
